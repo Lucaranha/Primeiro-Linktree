@@ -1,0 +1,94 @@
+h1{
+    text-align: center;
+    position:relative;   
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    width: 100px;
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 10%;
+    top: 10px;
+}
+
+body{
+    background-color: rgb(103, 98, 65);
+    color: white;
+}
+
+.foto{
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+    border-radius: 100%;
+    width: 200px;
+    border-style: ridge;
+    
+}
+
+p {
+    position:relative;
+    text-align: center;
+    padding: 20px;
+    font-size: 25px;
+    text-shadow: 5px 5px 35px;    
+    
+
+}
+
+a{
+    text-align: center;
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    font-size: 20px;
+    padding: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    border-radius: 10px;
+    background-color: antiquewhite;
+    width: 220px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+a:hover {
+    background-color: wheat; /* Cor de fundo ao passar o mouse */
+    color: rgb(97, 79, 47); /* Cor do texto ao passar o mouse */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para dar um efeito de profundidade */
+    transform: scale(1.1); /* Aumenta um pouco o link ao passar o mouse */
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+a:focus{
+    outline: none;
+}
+
+.foto:hover{
+    transform: scale(1.1) ;
+    transition: all 0.4s ease;
+    box-shadow: 3px 3px 5px rgba(255, 255, 255, 0.7), -3px -3px 5px rgba(255, 255, 255, 0.7);
+}
+
+p {
+    font-size: 2em;
+    font-weight: bold;
+    opacity: 0;
+    animation: fadeInMove 3s ease-out forwards;
+}
+
+/* Definindo a animação */
+@keyframes fadeInMove {
+    0% {
+        opacity: 0;
+        transform: translateY(-40px); /* Começa acima da tela */
+    }
+    50% {
+        opacity: 1;
+        transform: translateY(20px); /* Sobe um pouco */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0); /* Fica na posição original */
+    }
+}
